@@ -13,7 +13,7 @@
 <body>
   
   <!-- Navegation -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar box-shadow navbar-expand-md navbar-light bg-light fixed-top py-3">
     <a href="index.html" class="navbar-brand">
       <img src="./img/caravan.svg" alt="logo caravan">
     </a>
@@ -23,8 +23,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto ">
-        <li class="nav-item">
-          <a class="nav-link" href="locais.html">Locais</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="#">Locais</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
+              <li><a class="dropdown-item" href="local.html">Páris</a></li>
+              <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+            </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="planos.html">Planos</a>
