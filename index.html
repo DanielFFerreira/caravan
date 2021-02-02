@@ -1,56 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Caravan</title>
 </head>
-<body>
-  
-  <!-- Navegation -->
-  <nav class="navbar box-shadow navbar-expand-md navbar-light bg-light fixed-top py-3">
-    <a href="index.html" class="navbar-brand">
-      <img src="./img/caravan.svg" alt="logo caravan">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto ">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="#">Locais</a>
+<body>
+
+  <!-- Navegation -->
+  <header>
+    <nav class="navbar box-shadow navbar-expand-md navbar-light bg-light fixed-top py-3">
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/caravan.svg" alt="logo caravan">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false" href="#">Locais</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
               <li><a class="dropdown-item" href="local.html">Páris</a></li>
               <li><a class="dropdown-item" href="local.html">Dublin</a></li>
             </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="planos.html">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-primary ms-md-2" href="inscricao.html">Increver-se</a>
-        </li>
-      </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary ms-md-2" href="inscricao.html">Increver-se</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container-fluid">
+    <div class="row bg-dark text-light">
+      <!-- Carousel -->
+      <div class="col-lg-7 p-0">
+        <div id="carouselCidade" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselCidade" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselCidade" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselCidade" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselCidade" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carouselCidade" data-bs-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/california.jpg" class="d-block w-100" alt="Foto california">
+              <div class="carousel-caption">
+                <h3 class="display-4">Califórnia</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/dublin.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h3 class="display-4">Dublin</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/paris.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h3 class="display-4">Páris</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/toquio.jpg" class="d-block w-100" alt="Tóquio">
+              <div class="carousel-caption">
+                <h3 class="display-4">Tóquio</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/riojaneiro.jpg" class="d-block w-100" alt="Rio de Janeiro">
+              <div class="carousel-caption">
+                <h3 class="display-4">Rio de Janeiro</h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselCidade" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCidade" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <h1 class="display-4">Realize a viagem do seu sonho</h1>
+        <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.</p>
+        <form action="">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail"
+              aria-describedby="button-addon2">
+            <button class="btn btn-primary type=" button" id="button-addon2">Inscreva-se</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </nav>
+  </section>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
   <script src="./js/app.js"></script>
 </body>
+
 </html>
